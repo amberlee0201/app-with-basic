@@ -1,4 +1,4 @@
-# spring-boot-service-01.yaml
+# app-with-argocd-service-01.yaml
 apiVersion: v1
 kind: Service
 metadata:

@@ -13,4 +13,4 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: db-storage
   hostPath:
-    path: /mnt/data
+    path: /mnt/app-argocd
