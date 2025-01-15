@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: app-with-argocd
-          image: amberlee0201/app-with-argocd:59ef2fbadaa8b2d94bed9a3aa9730d6f2dc942d2
+          image: amberlee0201/app-with-argocd:204abf55d8a14ca5979459c8505f0ff011cbbf52
