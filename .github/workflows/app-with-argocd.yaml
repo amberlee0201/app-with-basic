@@ -2,6 +2,8 @@ name: App With ArgoCD Github Actions
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - 'manifest/**' # 특정 디렉토리 무시
 
 jobs:
   ci:
@@ -85,5 +87,5 @@ jobs:
           git config --local user.email "amber.lee.020100@gmail.com"
           git config --local user.name "amberlee0201"
           git add .
-          git commit -m "Update spring boot image to latest"
+          git commit -m "[CI/CD Automated] Update spring boot image to latest"
           git push
