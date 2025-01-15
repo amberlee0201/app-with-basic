@@ -3,15 +3,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: db-deployment
+  namespace: app-with-argocd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mysql
+      app.kubernetes.io/name: mysql
   template:
     metadata:
       labels:
-        app: mysql
+        app.kubernetes.io/name: mysql
     spec:
       containers:
         - name: mysql-container

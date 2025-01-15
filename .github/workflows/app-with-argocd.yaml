@@ -72,6 +72,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          repository:
           ref: main
           token: ${{ secrets.TOKEN }}
 
@@ -84,5 +85,5 @@ jobs:
           git config --local user.email "amber.lee.020100@gmail.com"
           git config --local user.name "amberlee0201"
           git add .
-          git commit -m "Update nginx image to latest"
+          git commit -m "Update spring boot image to latest"
           git push

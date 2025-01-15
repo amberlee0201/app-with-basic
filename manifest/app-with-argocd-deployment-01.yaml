@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-k8s
+  name: app-with-argocd-deploy
+  namespace: app-with-argocd
 spec:
   replicas: 3
   selector:

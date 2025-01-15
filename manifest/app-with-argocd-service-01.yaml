@@ -2,7 +2,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: spring-boot-service
+  name: app-with-argocd-service
+  namespace: app-with-argocd
 spec:
   selector:
     app.kubernetes.io/name: spring-boot-deploy
