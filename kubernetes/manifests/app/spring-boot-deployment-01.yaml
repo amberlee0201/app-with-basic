@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-k8s
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: spring-boot-deploy
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: spring-boot-deploy
+    spec:
+      containers:
+        - name: spring-boot-k8s
+          image: amberlee0201/spring-boot-k8s:latest

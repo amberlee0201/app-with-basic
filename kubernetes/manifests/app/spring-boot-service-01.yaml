@@ -1,0 +1,14 @@
+# spring-boot-service-01.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-service
+spec:
+  selector:
+    app.kubernetes.io/name: spring-boot-deploy
+  type: NodePort
+  ports:
+    - protocol: TCP
+      nodePort: 31002
+      port: 8080
+      targetPort: 8080
